@@ -1,8 +1,35 @@
-const express = require('express')
-const router = express.Router()
+const exp = require('express')
+const router = exp.Router()
 
-router.get('/', (req, res)=>{
-    res.send('React Api')
+const db = require('../config/db')
+
+router.get('/', async (req, res) => {
+    let sql = "SELECT * FROM users ORDER BY id DESC"
+    await db.query(sql, (err, datas) => {
+        if (err) throw err
+        res.json(datas)
+    })
 })
 
+router.get('/:id', async (req, res) => {
+    let id = req.params.id
+    let sql = "SELECT * FROM users WHERE id = ?"
+    await db.query(sql, [id], (err, data) => {
+        if (err) throw err
+        res.json(data)
+    })
+})
+
+router.post('/add', async (req, res) => {
+    const { username, fullname, email, password } = req.body
+    if (!username || !fullname || !email || !password) {
+        res.json('Error empty  values')
+    } else {
+        let sql = "INSERT INTO users(username, fullname, email, `password`) VALUES(?, ?, ? ,?)"
+        db.query(sql, [username, fullname, email, md5(password)], (err, callback) => {
+            if (err) throw err
+            res.json(`Data registered ${callback}`)
+        })
+    }
+})
 module.exports = router

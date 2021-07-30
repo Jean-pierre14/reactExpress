@@ -1,6 +1,7 @@
 const exp = require('express')
 const { success, error } = require('consola')
 // const bodyParser = require('body-parser')
+require('dotenv').config()
 const app = exp()
 const PORT = process.env.PORT || 5000
 
