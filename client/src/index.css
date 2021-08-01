@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.grid-2{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}

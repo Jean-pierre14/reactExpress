@@ -7,7 +7,17 @@ function App() {
   return (
     <div className="App">
       <h4>Hello wolrd</h4>
-      <Form />
+      <div className="grid-2">
+        <div className="registration">
+          <Form />
+        </div>
+        <div>
+          <h3>Data</h3>
+          <p>
+            lorem
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
