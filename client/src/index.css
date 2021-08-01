@@ -9,4 +9,45 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+  font-family: calibri !important;
+}
+.grid-2 > div{
+  position: relative;
+  padding: 10px;
+}
+.grid-2 > div:nth-child(1){
+  /* background: red; */
+  border-right: 3px solid #ccc;
+}
+.form{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.form form{
+  position: relative;
+}
+.form .group{
+  display: block;
+  margin: 10px 0;
+}
+.form .group .input{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: .4rem;
+  outline: none !important;
+}
+
+.button{
+  outline: none !important;
+  border: 1px solid #ccc;
+  border-radius: .4rem;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover{
+  opacity: .9;
 }
