@@ -1,14 +1,15 @@
 import React from 'react'
+import NavLink from 'react-router-dom'
 
 class Navbar extends React.Component {
     render() {
         return (
             <nav>
-                <a href={ }>Jean-Pierre14</a>
+                <NavLink to="/">Jean-Pierre14</NavLink>
                 <ul>
-                    <li><a href={ }>Home</a></li>
-                    <li><a href={ }>Profil</a></li>
-                    <li><a href={ }>Logout</a></li>
+                    <li><NavLink to="/home">Home</NavLink></li>
+                    <li><NavLink to="/home">Profil</NavLink></li>
+                    <li><NavLink to="/home">Logout</NavLink></li>
                 </ul>
             </nav>
         )
