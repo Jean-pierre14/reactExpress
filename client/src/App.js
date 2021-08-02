@@ -2,11 +2,12 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Form from './components/form';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <h4>Hello wolrd</h4>
+      <Navbar />
       <div className="grid-2">
         <div className="registration">
           <Form />
