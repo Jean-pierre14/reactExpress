@@ -1,11 +1,11 @@
 import React from 'react';
 import Form from './components/form';
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/navbar';
 
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <div className="grid-2">
         <div className="registration">
@@ -18,7 +18,7 @@ function App() {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
