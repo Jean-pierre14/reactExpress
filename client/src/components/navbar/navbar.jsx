@@ -20,7 +20,7 @@ class Navbar extends React.Component {
                 <div className="NavBarRight">
                     <div className="Links">
                         <img src="" alt="Profil image" className="profilImg" />
-                        <ul className="List">
+                        <ul className="ListNavBar">
                             <li className="ListItem">
                                 <span>P</span>
                                 <span>Message</span>

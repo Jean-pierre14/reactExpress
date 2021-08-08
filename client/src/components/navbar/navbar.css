@@ -55,3 +55,17 @@
     align-items: center;
     justify-content: space-around;
 }
+.ListNavBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    list-style: none !important;
+}
+.ListItem{
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
