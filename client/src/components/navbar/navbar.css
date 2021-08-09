@@ -68,6 +68,13 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
+    padding: 7px;
+    transition: 0.3s;
+}
+.ListItem:hover{
+    color: #ccc;
+    border-radius: 4px;
+    background-color: #fff;
 }
 .profilImg{
     width: 42px;

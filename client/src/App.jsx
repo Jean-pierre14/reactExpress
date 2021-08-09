@@ -1,22 +1,20 @@
 import React from 'react';
-import Form from './components/form';
 import Navbar from './components/navbar/navbar';
+import SideBar from './components/sidebar/SideBar';
+import Feed from './components/feed/Feed';
+import RightBar from './components/rightbar/RightBar';
 
+// Style
+import "./Home.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="grid-2">
-        <div className="registration">
-          <Form />
-        </div>
-        <div>
-          <h3>Data</h3>
-          <p>
-            lorem
-          </p>
-        </div>
+      <div className="homeContainer">
+        <SideBar />
+        <Feed />
+        <RightBar />
       </div>
     </>
   );

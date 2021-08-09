@@ -1,6 +1,5 @@
-import React from "react"
-
-import "./navbar.css"
+import React from "react";
+import "./navbar.css";
 
 class Navbar extends React.Component {
     render() {
@@ -18,21 +17,22 @@ class Navbar extends React.Component {
                 </div>
                 <div className="NavBarRight">
                     <div className="Links">
-                        <img src="/assets/images.jpg" alt="Profil image" className="profilImg" />
+
                         <ul className="ListNavBar">
                             <li className="ListItem">
-                                <span>P</span>
+                                <span> P </span>
                                 <span>Message</span>
                             </li>
                             <li className="ListItem">
-                                <span>P</span>
+                                <span> P </span>
                                 <span>Profil</span>
                             </li>
                             <li className="ListItem">
-                                <span>P</span>
+                                <span> P </span>
                                 <span>About</span>
                             </li>
                         </ul>
+                        <img src="/assets/images.jpg" alt="Profil image" className="profilImg" />
                     </div>
                 </div>
             </nav>

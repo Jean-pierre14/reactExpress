@@ -1,0 +1,76 @@
+.SideBar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+}
+.SideBarWrapper{
+    width: 100%;
+    padding: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #ccc;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+}
+
+.SideBarList{
+    list-style: none;
+}
+.SideBarListItem{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.SideBarListItemText{
+    font-weight: bold;
+}
+.SideBarIcon{
+    margin-right: 10px;
+}
+.SideBarListItem:hover{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.SideBarHr{
+    position: relative;
+    display: block;
+    margin: 10px 15px 10px 0;
+    background-color: #000;
+}
+
+.UserProfilImg{
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.UsersList{
+    position: relative;
+    margin-top: 20px;
+}
+.UsersListItem{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.UsersListItem:hover{
+    color: #fff;
+    background-color: royalblue;
+}
+
+.UserName{
+    margin-left: 15px;
+    font-weight: bold;
+}
