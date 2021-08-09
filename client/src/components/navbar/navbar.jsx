@@ -1,6 +1,5 @@
 import React from "react"
 
-
 import "./navbar.css"
 
 class Navbar extends React.Component {
@@ -19,7 +18,7 @@ class Navbar extends React.Component {
                 </div>
                 <div className="NavBarRight">
                     <div className="Links">
-                        <img src="" alt="Profil image" className="profilImg" />
+                        <img src="/assets/images.jpg" alt="Profil image" className="profilImg" />
                         <ul className="ListNavBar">
                             <li className="ListItem">
                                 <span>P</span>
