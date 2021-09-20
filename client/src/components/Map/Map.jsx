@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 // import Axios from 'axios'
 
 // const options = {
@@ -23,6 +24,7 @@ import React, { Component } from 'react'
 //         'x-rapidapi-host': 'travel-advisor.p.rapidapi.com'
 //     }
 // };
+import './style.css'
 
 export default class Map extends Component {
     render() {
@@ -34,6 +36,14 @@ export default class Map extends Component {
                             <div className="card">
                                 <div className="card-header">
                                     <h2>Map header</h2>
+                                </div>
+                                <div className="card-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sapiente ab omnis quaerat fugit ipsam sed molestiae est nostrum molestias laborum qui temporibus incidunt laudantium, soluta sint consequuntur illum, quibusdam tempora. Nemo veritatis illum quasi, unde sit rem impedit facilis. Impedit assumenda distinctio repellendus sunt velit quod quae dignissimos? Molestias dolore adipisci nihil recusandae dolorum sed aspernatur facere ratione quidem harum odio, aliquid repellat tempora nam, officiis itaque accusamus provident minima et ipsum ullam? Provident animi quibusdam fuga ullam fugiat ut? Impedit, nisi possimus. Inventore velit incidunt doloribus! Quaerat tempora quod dolorem expedita esse laudantium praesentium distinctio temporibus non nam?
+                                    </p>
+                                </div>
+                                <div className="card-footer">
+                                    <h2>footer</h2>
                                 </div>
                             </div>
                         </div>
