@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "./index.css";
 // import App from './App';
-import Map from './components/Map/Map'
+import MapApp from './MapApp';
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <Map />
-  </React.StrictMode>,
+
+  <>
+    {/* <App /> */} {/* This for a socia media */}
+    {/* <h3>Welcome to my code</h3> */}
+    <MapApp /> {/* this for a map interface */}
+  </>,
+
   document.getElementById('root')
 );

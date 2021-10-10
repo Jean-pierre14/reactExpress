@@ -7,7 +7,7 @@ class Navbar extends React.Component {
             <nav className="NavBar">
                 <div className="NavBarLeft">
                     <span className="logo">
-                        Jean-Pierre14
+                        Mr. Bisimwa
                     </span>
                 </div>
                 <div className="NavBarCenter">
