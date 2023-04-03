@@ -23,18 +23,15 @@ router.get("/:id", async (req, res) => {
 router.post("/add", async (req, res) => {
   const { username, fullname, email, password } = req.body;
   if (!username || !fullname || !email || !password) {
-    res.json("Error empty  values");
+    res.status(400).json("Error empty  values - " + JSON.stringify(req.body));
   } else {
     let sql =
       "INSERT INTO users(username, fullname, email, `password`) VALUES(?, ?, ? ,?)";
-    db.query(
-      sql,
-      [username, fullname, email, md5(password)],
-      (err, callback) => {
-        if (err) throw err;
-        res.json(`Data registered ${callback}`);
-      }
-    );
+    db.query(sql, [username, fullname, email, password], (err, callback) => {
+      if (err) throw err;
+      res.json(`Data registered ${callback}`);
+    });
   }
 });
+
 module.exports = router;
